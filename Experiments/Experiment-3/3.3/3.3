@@ -1,0 +1,8 @@
+3.2 - https://leetcode.com/problems/customers-who-never-order/description/
+Code(3.2):
+          # Write your MySQL query statement below
+          SELECT NAME AS Customers FROM CUSTOMERS
+          WHERE ID NOT IN (
+              SELECT CUSTOMERID FROM Orders
+          )
+Link - https://leetcode.com/submissions/detail/2088366965/
